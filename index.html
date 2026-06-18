@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>7-C BRAINS</title>
+<style>
+body{font-family:Arial,sans-serif;background:#eef5ff;padding:20px}
+h1{text-align:center}
+input{width:70%;padding:10px}
+button{padding:10px}
+#result{margin-top:20px;background:white;padding:15px;border-radius:8px}
+</style>
+</head>
+<body>
+<h1>7-C BRAINS</h1>
+<p>Search a question exactly as listed.</p>
+<input id="q"><button onclick="searchQuestion()">Search</button>
+<div id="result"></div>
+<script>
+const questions = {
+"what is a noun":"A noun is a naming word for a person, place, thing, or idea.",
+
+"what is a verb":"A verb is an action or doing word.",
+
+"what is an adjective":"An adjective describes a noun.",
+
+"what is a pronoun":"A pronoun replaces a noun.",
+
+"what is a synonym":"A synonym is a word with a similar meaning.",
+
+"what is an antonym":"An antonym is a word with the opposite meaning.",
+
+"what is the past tense of go":"The past tense of go is went.",
+
+"what is the capital of the uae":"Abu Dhabi is the capital of the UAE.",
+
+"what is the largest planet":"Jupiter is the largest planet in the Solar System.",
+
+"how many continents are there":"There are 7 continents on Earth.",
+
+"what is the longest word in the dictionary":"One of the longest words found in major dictionaries is pneumonoultramicroscopicsilicovolcanoconiosis.",
+
+"who invented the telephone":"Alexander Graham Bell is credited with inventing the telephone.",
+
+"what is the national animal of the uae":"The Arabian Oryx is the national animal of the UAE.",
+
+"which planet is known as the red planet":"Mars is known as the Red Planet.",
+
+"what is the largest ocean":"The Pacific Ocean is the largest ocean on Earth."
+};
+function searchQuestion(){
+ const q=document.getElementById('q').value.toLowerCase().trim();
+ document.getElementById('result').innerHTML=questions[q]||'Question not found';
+}
+</script>
+<h2>Available Questions</h2><ol>
+<li>English Question 1</li>
+<li>English Question 2</li>
+<li>English Question 3</li>
+<li>English Question 4</li>
+<li>English Question 5</li>
+<li>English Question 6</li>
+<li>English Question 7</li>
+<li>English Question 8</li>
+<li>English Question 9</li>
+<li>English Question 10</li>
+<li>English Question 11</li>
+<li>English Question 12</li>
+<li>English Question 13</li>
+<li>English Question 14</li>
+<li>English Question 15</li>
+</ol></body></html>
